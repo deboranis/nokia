@@ -1,0 +1,282 @@
+$blue:rgb(54,58,70);
+$silver:rgb(190,190,188);
+$green:rgb(151,216,148);
+$screen:rgb(97,115,89);
+$black:rgb(28,27,23);
+body{
+  background:rgb(219,220,222);
+}
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 8%;
+  width: 500px;
+  height: 500px;
+ }
+.phone-body{
+  position:absolute;
+  width: 160px;
+  height: 350px;
+  background:$blue;
+  left:35%;
+  top:20%;
+  border:2px solid rgb(44,48,61);
+  border-radius:25% 25% 30% 30%;
+}
+.phone-silver{
+   position:absolute;
+  width: 135px;
+  height: 180px;
+  background:$silver;
+  left:8%;
+  top:1%;
+  border-bottom:15px solid $silver;
+  border-top:2px solid $silver;
+  border-radius:25% 25% 40% 40%;
+}
+.green-button{
+  position:absolute;
+  width: 60px;
+  height: 20px;
+  background:$silver;
+  left:25%;
+  bottom:-10%;
+  border-radius:5% 5% 70% 70%;
+  border:2px solid grey;
+  z-index:4;
+}
+.green-button::after{
+ content:"" ;
+  position:absolute;
+  height:3px;
+  width:30px;
+  background:$green;
+  left:25%;
+  top:25%;
+  border: 1px solid rgb(135,211,132);
+  border-radius:10px;
+}
+.phone-blue{
+   position:absolute;
+  width: 115px;
+  height: 160px;
+  background:$blue;
+  left:7%;
+  top:2%;
+  border-radius:25% 25% 20% 20%;
+  }
+.nokia{
+  position:absolute;
+  font-size:15px;
+  font-family: 'Istok Web', sans-serif;
+  font-weight:700;
+  background:rgb(44,48,61);
+  color:$silver;
+  left:30%;
+  top:19%;
+}
+.speaker1, .speaker2, .speaker3, .speaker4, .speaker5{
+  position:absolute;
+  background:$black;
+  height:4px;
+  width:4px;
+  left:48%;
+  border-radius:50%;
+  border:1px solid rgb(44,48,61);
+ }
+.speaker1{
+top:2%;
+}
+.speaker2{
+  top:6%;
+}
+.speaker3{
+  top:10%;
+}
+.speaker4{
+  top:14%;
+}
+.speaker5{
+  top:18%;
+}
+.screen{
+   position:absolute;
+  width: 100px;
+  height: 80px;
+  background:$screen;
+  left:7%;
+  bottom:10%;
+  border-radius:2% 2% 10% 10%;
+  }
+.snake{
+  position:absolute;
+  top:20%;
+  left:35%;
+  background:$black;
+  height:6px;
+  width:5px;
+  opacity:0;
+  animation: expand 2s ease-in, fadeOut 1s ease 1s;
+}
+@-webkit-keyframes expand {
+  0%{ 
+    width: 5px; 
+  }
+  
+  100% {
+    width: 48px;
+   }
+}
+@-webkit-keyframes fadeOut {
+  0%{ 
+    opacity: 1; 
+  }
+  50%{ 
+    opacity: 1; 
+  }
+  90% {
+    opacity: .5;
+   }
+  99% {
+    opacity: .2;
+   }
+  100% {
+    opacity: 0;
+   }
+}
+.snake2{
+  position:absolute;
+  top:20%;
+  left:75%;
+  background:$black;
+  height:6px;
+  width:5px;
+  opacity:0;
+  animation: length 2s ease-in 1s forwards, fadeIn 1.25s ease-out 1.75s;
+}
+@-webkit-keyframes length {
+  0%{ 
+    height: 6px; 
+  }
+  
+  100% {
+    height: 65px;
+   }
+}
+@-webkit-keyframes fadeIn {
+  0%{ 
+    opacity: .2; 
+  }
+  50%{ 
+    opacity: 1; 
+  }
+  100% {
+    opacity: 1;
+   }
+}
+.game{
+  position:absolute;
+  font-size:15px;
+  left:10%;
+  top:20%;
+  opacity:0;
+  animation:fadeIn 1.25s ease-out 3s forwards;
+ }
+.button1, .button4, .button7, .button10{
+  position:absolute;
+  width: 30px;
+  height: 20px;
+  background: $silver;
+  left: 10%;
+  border-radius: 50% 90% 50% 90%;
+  border:2px solid grey;
+  z-index:4;
+}
+.button1{
+  top:60%;
+}
+
+.button4{
+  top:68%;
+  }
+
+.button7{
+  top:76%;
+}
+.button10{
+  top:84%;
+  }
+.button3, .button6, .button9, .button12{
+  position:absolute;
+  width: 30px;
+  height: 20px;
+  background:$silver;
+  right:10%;
+  border-radius:90% 50% 90% 50%;
+  border:2px solid grey;
+  z-index:4;
+}
+.button3{
+  top:60%;
+}
+.button6{
+ top:68%;
+}
+.button9{
+  top:76%;
+ }
+.button12{
+  top:84%;
+  }
+
+.button2, .button5, .button8, .button11{
+  position:absolute;
+  width: 30px;
+  height: 20px;
+  background:$silver;
+  left:40%;
+  border-radius:80% 80% 90% 90%;
+  border:2px solid grey;
+  z-index:4;
+}
+.button2{
+  top:62%;
+}
+.button5{
+ top:70%;
+}
+.button8{
+  top:78%;
+ }
+.button11{
+  top:86%;
+  }
+.call-button{
+  position:absolute;
+  width: 35px;
+  height: 15px;
+  background:$silver;
+  left:15%;
+  top:50%;
+  border-radius:10% 10% 30% 20%;
+  border:2px solid grey;
+  transform:rotate(40deg);
+  z-index:4;
+}
+.scroll-button{
+  position:absolute;
+  width: 40px;
+  height: 15px;
+  background:$silver;
+  right:10%;
+  top:50%;
+  border-radius:30% 30% 30% 20%;
+  border:2px solid grey;
+  transform:rotate(-40deg);
+  z-index:4;
+}
+
+
+
+.btn {cursor: pointer;}
