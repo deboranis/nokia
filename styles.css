@@ -1,0 +1,40 @@
+.crew_table {
+    font-family: Ro;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    max-width: 700px;
+    align-items: center;
+    background-color: #84B59F;
+}
+
+.crew {
+    padding: 10px;
+    margin: 15px 15px;
+    font-size: 12px;
+    width: 120px;
+    background-color: #A3C9A8;
+}
+
+.crew_name {
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.crew_pic {
+    max-width: 100px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #50808E;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+}
